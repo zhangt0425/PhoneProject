@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  PhoneProject
+//
+//  Created by 涛涛 on 2017/8/21.
+//  Copyright © 2017年 张涛. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ThirdPartyHeader.h"
+#import "APPDefineHeader.h"
+#import "BaseHeader.h"
+#import "CategoryHeader.h"
+#import "APPManagerHeader.h"
+#import "APPServices.h"
+
+#endif /* PrefixHeader_pch */
