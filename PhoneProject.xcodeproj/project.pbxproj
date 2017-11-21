@@ -1005,6 +1005,8 @@
 			children = (
 				BE73562B1F55004500CB24A4 /* README.txt */,
 				BE6F36611F46B6E300EDC055 /* System */,
+				BE7871DC1FC40F8E009EBC05 /* Others */,
+				BE7871DE1FC40F8E009EBC05 /* Resource */,
 				BE6F36411F46991300EDC055 /* ProjectUI */,
 				BE6F36301F4696D600EDC055 /* Class */,
 				BE6F36401F4698BE00EDC055 /* PluginTool */,
@@ -1528,6 +1530,52 @@
 				BE7871D51FC3CD3F009EBC05 /* APPChoosePhotosManager.m */,
 			);
 			path = APPChoosePhotosManager;
+			sourceTree = "<group>";
+		};
+		BE7871DC1FC40F8E009EBC05 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BE7871DD1FC40F8E009EBC05 /* Project */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		BE7871DD1FC40F8E009EBC05 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		BE7871DE1FC40F8E009EBC05 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE7871DF1FC40F8E009EBC05 /* Font */,
+				BE7871E01FC40F8E009EBC05 /* Images */,
+				BE7871E11FC40F8E009EBC05 /* Sound */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BE7871DF1FC40F8E009EBC05 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BE7871E01FC40F8E009EBC05 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BE7871E11FC40F8E009EBC05 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		BE7ADB3C1F4FB9F3004D347A /* SVProgressHUD */ = {
