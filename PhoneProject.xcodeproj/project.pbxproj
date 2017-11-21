@@ -1006,44 +1006,11 @@
 				BE73562B1F55004500CB24A4 /* README.txt */,
 				BE6F36611F46B6E300EDC055 /* System */,
 				BE6F36411F46991300EDC055 /* ProjectUI */,
-				BE6F364A1F46B4A900EDC055 /* Others */,
 				BE6F36301F4696D600EDC055 /* Class */,
 				BE6F36401F4698BE00EDC055 /* PluginTool */,
 				BE6F363F1F46984800EDC055 /* ThirdParty */,
-				BE6F362C1F46933A00EDC055 /* Resource */,
 			);
 			path = PhoneProject;
-			sourceTree = "<group>";
-		};
-		BE6F362C1F46933A00EDC055 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				BE6F362D1F46933A00EDC055 /* Font */,
-				BE6F362E1F46933A00EDC055 /* Images */,
-				BE6F362F1F46933A00EDC055 /* Sound */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		BE6F362D1F46933A00EDC055 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
-		BE6F362E1F46933A00EDC055 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		BE6F362F1F46933A00EDC055 /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sound;
 			sourceTree = "<group>";
 		};
 		BE6F36301F4696D600EDC055 /* Class */ = {
@@ -1274,21 +1241,6 @@
 				BE70B2D91F4AE6F500471362 /* HomeViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		BE6F364A1F46B4A900EDC055 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				BE6F364B1F46B4A900EDC055 /* Project */,
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		BE6F364B1F46B4A900EDC055 /* Project */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Project;
 			sourceTree = "<group>";
 		};
 		BE6F36611F46B6E300EDC055 /* System */ = {
