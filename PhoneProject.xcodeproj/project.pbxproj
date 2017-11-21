@@ -458,6 +458,10 @@
 		BE73562F1F55017800CB24A4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BE7356311F550B8900CB24A4 /* APPCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPCacheManager.h; sourceTree = "<group>"; };
 		BE7356321F550B8900CB24A4 /* APPCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPCacheManager.m; sourceTree = "<group>"; };
+		BE7871D11FC3CCD6009EBC05 /* APPRefreshDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPRefreshDataManager.h; sourceTree = "<group>"; };
+		BE7871D21FC3CCD6009EBC05 /* APPRefreshDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPRefreshDataManager.m; sourceTree = "<group>"; };
+		BE7871D41FC3CD3F009EBC05 /* APPChoosePhotosManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPChoosePhotosManager.h; sourceTree = "<group>"; };
+		BE7871D51FC3CD3F009EBC05 /* APPChoosePhotosManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPChoosePhotosManager.m; sourceTree = "<group>"; };
 		BE7ADB341F4FB79F004D347A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		BE7ADB361F4FB7CC004D347A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BE7ADB381F4FB7D5004D347A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -918,6 +922,8 @@
 			isa = PBXGroup;
 			children = (
 				BE672BCE1F4E8403007AD55F /* APPManagerHeader.h */,
+				BE7871D31FC3CD3F009EBC05 /* APPChoosePhotosManager */,
+				BE7871D01FC3CCD6009EBC05 /* APPRefreshDataManager */,
 				BE7354721F540C2B005D2DAA /* APPConfigManager */,
 				BE672BEC1F4EB29B007AD55F /* ValidationManager */,
 				BE672BE81F4EAC62007AD55F /* TouchIDManager */,
@@ -1552,6 +1558,24 @@
 				BE7354741F540C3E005D2DAA /* APPConfigManager.m */,
 			);
 			path = APPConfigManager;
+			sourceTree = "<group>";
+		};
+		BE7871D01FC3CCD6009EBC05 /* APPRefreshDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE7871D11FC3CCD6009EBC05 /* APPRefreshDataManager.h */,
+				BE7871D21FC3CCD6009EBC05 /* APPRefreshDataManager.m */,
+			);
+			path = APPRefreshDataManager;
+			sourceTree = "<group>";
+		};
+		BE7871D31FC3CD3F009EBC05 /* APPChoosePhotosManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE7871D41FC3CD3F009EBC05 /* APPChoosePhotosManager.h */,
+				BE7871D51FC3CD3F009EBC05 /* APPChoosePhotosManager.m */,
+			);
+			path = APPChoosePhotosManager;
 			sourceTree = "<group>";
 		};
 		BE7ADB3C1F4FB9F3004D347A /* SVProgressHUD */ = {

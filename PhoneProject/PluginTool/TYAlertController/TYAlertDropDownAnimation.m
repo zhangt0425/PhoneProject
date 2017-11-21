@@ -31,6 +31,9 @@
         case TYAlertControllerStyleActionSheet:
             NSLog(@"don't support ActionSheet style!");
             break;
+        case TYAlertControllerStyleActionSheetRight:
+            NSLog(@"don't support ActionSheet style!");
+            break;
         default:
             break;
     }

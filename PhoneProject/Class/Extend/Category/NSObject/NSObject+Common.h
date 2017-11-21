@@ -16,7 +16,7 @@
 @interface NSObject (Common)
 
 //获取当前屏幕显示的viewcontroller
-+(UIViewController *)currentViewController;
+-(UIViewController *)currentViewController;
 
 
 /**
@@ -44,5 +44,14 @@
  
  */
 + (BOOL)callTel:(NSString *)tel;
+
+//id 取值
+extern NSString* StringValue(id obj);
+extern NSString* StringIntValue(id obj);
+extern NSString* StringFloatValue(id obj);
+extern NSAttributedString* AttributedStringValue(id obj);
+extern NSNumber* NumberValue(id obj);
+extern NSArray* ArrayValue(id obj);
+extern NSDictionary* DictionaryValue(id obj);
 
 @end

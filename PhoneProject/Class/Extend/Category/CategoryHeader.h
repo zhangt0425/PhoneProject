@@ -10,10 +10,9 @@
 #define CategoryHeader_h
 
 #import "BlockHeader.h"
+#import "NSObject+Common.h"
 #import "CommonAlertSheetController.h"
 #import "CommonAlertViewController.h"
-
-#import "NSObject+Common.h"
 #import "UITextField+Common.h"
 #import "UIImageView+Common.h"
 #import "UILabel+Common.h"

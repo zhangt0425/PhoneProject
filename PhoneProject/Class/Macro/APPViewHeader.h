@@ -84,14 +84,4 @@
 #define DEF_SCREEN_FRAME  [UIScreen mainScreen].applicationFrame
 
 
-//底部tabBar高度
-#define DEF_TABBARHEIGHT   49
-
-//导航栏高度
-#define DEF_NAVBARHEIGHT   64
-
-//去除导航栏和状态栏的高度
-#define DEF_CONTENT  DEF_SCREEN_HEIGHT - DEF_NAVBARHEIGHT
-
-
 #endif /* APPViewHeader_h */

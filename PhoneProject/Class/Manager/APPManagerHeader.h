@@ -18,5 +18,7 @@
 #import "KeychainManager.h"
 #import "TouchIDManager.h"
 #import "APPConfigManager.h"
+#import "APPRefreshDataManager.h"
+#import "APPChoosePhotosManager.h"
 
 #endif /* APPManagerHeader_h */

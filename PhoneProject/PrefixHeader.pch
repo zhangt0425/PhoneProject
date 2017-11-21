@@ -9,11 +9,11 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "ThirdPartyHeader.h"
-#import "APPDefineHeader.h"
-#import "BaseHeader.h"
 #import "CategoryHeader.h"
+#import "BaseHeader.h"
+#import "APPDefineHeader.h"
 #import "APPManagerHeader.h"
+#import "ThirdPartyHeader.h"
 #import "APPServices.h"
 
 #endif /* PrefixHeader_pch */

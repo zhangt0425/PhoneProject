@@ -32,6 +32,9 @@
         case TYAlertControllerStyleActionSheet:
             alertController.alertView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(alertController.alertView.frame));
             break;
+        case TYAlertControllerStyleActionSheetRight:
+            alertController.alertView.transform = CGAffineTransformMakeTranslation(CGRectGetWidth(alertController.alertView.frame), 0);
+            break;
         default:
             break;
     }
@@ -48,6 +51,9 @@
                 break;
             case TYAlertControllerStyleActionSheet:
                 alertController.alertView.transform = CGAffineTransformMakeTranslation(0, -10.0);
+                break;
+            case TYAlertControllerStyleActionSheetRight:
+                alertController.alertView.transform = CGAffineTransformMakeTranslation(-10, 0);
                 break;
             default:
                 break;
@@ -75,6 +81,9 @@
                 break;
             case TYAlertControllerStyleActionSheet:
                 alertController.alertView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(alertController.alertView.frame));
+                break;
+            case TYAlertControllerStyleActionSheetRight:
+                alertController.alertView.transform = CGAffineTransformMakeTranslation(CGRectGetWidth(alertController.alertView.frame), 0);
                 break;
             default:
                 break;

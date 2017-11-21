@@ -16,7 +16,7 @@
 
 + (instancetype)createViewFromNibName:(NSString *)nibName;
 
-- (UIViewController*)viewController;
+- (UIViewController*)viewController;//当前视图控制器
 
 #pragma mark - show in controller
 

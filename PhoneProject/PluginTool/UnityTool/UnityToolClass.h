@@ -130,4 +130,22 @@
  */
 + (CGFloat)getBoldWidthWithString:(NSString *)string width:(CGFloat)width fontSize:(CGFloat)size;
 
+/**
+ *  获取UIViewController
+ *
+ *  @param string  字符串
+ *
+ *  @return return value  UIViewController
+ */
++ (UIViewController *)controllerWithString:(NSString *)string;
+
+/**
+ *  获取UIView
+ *
+ *  @param string  字符串
+ *
+ *  @return return value  UIView
+ */
++ (UIView *)viewWithString:(NSString *)string;
+
 @end

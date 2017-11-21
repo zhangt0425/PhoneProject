@@ -185,5 +185,52 @@
     CGSize sizeStr = [string boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:size]} context:nil].size;
     return sizeStr.width;
 }
-
+/**
+ *  获取UIViewController
+ *
+ *  @param string  字符串
+ *
+ *  @return return value  UIViewController
+ */
++ (UIViewController *)controllerWithString:(NSString *)string
+{
+    if (string == nil || [string length] <= 0)
+    {
+        return nil;
+    }
+    NSString * class = string;
+    const char * className = [class cStringUsingEncoding:NSASCIIStringEncoding];
+    Class newClass = objc_getClass(className);
+    if (!newClass) {
+        Class superClass = [UIViewController class];
+        newClass = objc_allocateClassPair(superClass, className, 0);
+        objc_registerClassPair(newClass);
+    }
+    id instance = [[newClass alloc] init];
+    return instance;
+}
+/**
+ *  获取UIView
+ *
+ *  @param string  字符串
+ *
+ *  @return return value  UIView
+ */
++ (UIView *)viewWithString:(NSString *)string
+{
+    if (string == nil || [string length] <= 0)
+    {
+        return nil;
+    }
+    NSString * class = string;
+    const char * className = [class cStringUsingEncoding:NSASCIIStringEncoding];
+    Class newClass = objc_getClass(className);
+    if (!newClass) {
+        Class superClass = [UIView class];
+        newClass = objc_allocateClassPair(superClass, className, 0);
+        objc_registerClassPair(newClass);
+    }
+    id instance = [[newClass alloc] init];
+    return instance;
+}
 @end

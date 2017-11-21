@@ -66,6 +66,12 @@
         if (_showHUDReqCount == 1)
         {
             //网络请求处理开始 菊花处理逻辑 在这里加载菊花
+            // 回到主线程
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (self.currentViewController) {
+                    [MBProgressHUD showHUDAddedTo:self.currentViewController.view animated:YES];
+                }
+            });
         }
     }
     
@@ -81,6 +87,12 @@
         if (_showHUDReqCount == 0)
         {
             //网络请求处理完毕 菊花处理逻辑 在这里隐藏菊花
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (self.currentViewController) {
+                    [MBProgressHUD hideAllHUDsForView:self.currentViewController.view animated:YES];
+                }
+            });
+            
         }
     }
     

@@ -233,6 +233,9 @@
         case TYAlertControllerStyleActionSheet:
             [self layoutActionSheetStyleView];
             break;
+        case TYAlertControllerStyleActionSheetRight:
+            [self layoutActionSheetRightStyleView];
+            break;
         case TYAlertControllerStyleAlert:
             [self layoutAlertStyleView];
             break;
@@ -301,7 +304,23 @@
         [_alertView addConstraintWidth:0 height:CGRectGetHeight(_alertView.frame)];
     }
 }
-
+- (void)layoutActionSheetRightStyleView
+{
+    for (NSLayoutConstraint *constraint in _alertView.constraints) {
+        if (constraint.firstAttribute == NSLayoutAttributeWidth) {
+            [_alertView removeConstraint: constraint];
+            break;
+        }
+    }
+    
+    // add edge constraint
+    [self.view addConstraintWithView:_alertView topView:self.view leftView:nil bottomView:self.view rightView:self.view edgeInset:UIEdgeInsetsMake(_actionSheetStyleEdging,0 ,_actionSheetStyleEdging,0)];
+    
+    if (CGRectGetWidth(_alertView.frame) > 0) {
+        // height
+        [_alertView addConstraintWidth:CGRectGetWidth(_alertView.frame) height:0];
+    }
+}
 - (void)dismissViewControllerAnimated:(BOOL)animated
 {
     [self dismissViewControllerAnimated:YES completion:self.dismissComplete];

@@ -11,14 +11,15 @@
 
 typedef NS_ENUM(NSInteger, TYAlertControllerStyle) {
     TYAlertControllerStyleAlert = 0,
-    TYAlertControllerStyleActionSheet
+    TYAlertControllerStyleActionSheet,
+    TYAlertControllerStyleActionSheetRight,
 };
 
 typedef NS_ENUM(NSInteger, TYAlertTransitionAnimation) {
     TYAlertTransitionAnimationFade = 0,
     TYAlertTransitionAnimationScaleFade,
     TYAlertTransitionAnimationDropDown,
-    TYAlertTransitionAnimationCustom
+    TYAlertTransitionAnimationCustom,
 };
 
 

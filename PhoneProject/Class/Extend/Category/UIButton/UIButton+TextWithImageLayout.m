@@ -13,6 +13,7 @@
 - (void)layoutButtonWithStyle:(ButtonImageWithTextStyle)style
                         space:(CGFloat)space
 {
+    CGFloat selfWidth=self.frame.size.width;
     // 1. 得到imageView和titleLabel的宽、高
     CGFloat imageWith = self.imageView.image.size.width;
     CGFloat imageHeight = self.imageView.image.size.height;
@@ -29,7 +30,9 @@
         labelWidth = self.titleLabel.frame.size.width;
         labelHeight = self.titleLabel.frame.size.height;
     }
-    
+    if (labelWidth+imageWith+space>selfWidth&&self.titleLabel.numberOfLines!=1) {
+        labelWidth=selfWidth-imageWith-space;
+    }
     // 2. 声明全局的imageEdgeInsets和labelEdgeInsets
     UIEdgeInsets imageEdgeInsets = UIEdgeInsetsZero;
     UIEdgeInsets labelEdgeInsets = UIEdgeInsetsZero;
